@@ -65,3 +65,7 @@
 .right {
     border-right: 1px solid red;
 }
+
+.laterais{
+    display: flex;
+}
