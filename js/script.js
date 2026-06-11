@@ -46,7 +46,7 @@ function processaTecla(evento)
     let atual = document.querySelector("#bloco"+posicaoX+posicaoY);
     atual.classList.remove("vermelho");
 
-    if (evento.key == "ArrowDown")
+    if (evento.key == "ArrowDown" || evento.key == "s")
     {
         let novaPosicao = document.querySelector("#bloco"+(posicaoX+1)+posicaoY);
         if (posicaoX < (gridSizeX-1) && !novaPosicao.classList.contains("azul"))
@@ -61,7 +61,7 @@ function processaTecla(evento)
             removeVida();
         }
     }
-    else if (evento.key == "ArrowRight")
+    else if (evento.key == "ArrowRight" || evento.key == "d")
     {
         let novaPosicao = document.querySelector("#bloco"+posicaoX+(posicaoY+1));
         if (posicaoY < (gridSizeY-1) && !novaPosicao.classList.contains("azul"))
@@ -76,7 +76,7 @@ function processaTecla(evento)
             removeVida();
         }
     }
-    else if (evento.key == "ArrowUp")
+    else if (evento.key == "ArrowUp" || evento.key == "w")
     {
         let novaPosicao = document.querySelector("#bloco"+(posicaoX-1)+posicaoY);
         // Posso ir para a nova posição?
@@ -93,7 +93,7 @@ function processaTecla(evento)
         }
 
     }
-    else if (evento.key == "ArrowLeft")
+    else if (evento.key == "ArrowLeft" || evento.key == "a")
     {
         let novaPosicao = document.querySelector("#bloco"+posicaoX+(posicaoY-1));
         if (posicaoY > 0 && !novaPosicao.classList.contains("azul"))
