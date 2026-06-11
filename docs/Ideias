@@ -1,7 +1,9 @@
 Algoritmos:
 
-	Sistema de pontuação ->
-	Fases ->
+	Sistema de pontuação -> (100 % 0,tempo) + (vidas*1,5*fase) + (moedas*fase+1)
+	Fases ->Mais obstaculos
+		Aumentar a velocidade
+		Mais pontuação
 	
 Estilização:
 
@@ -15,6 +17,18 @@ Banco de dados:
 	
 Diferencias?:
 
-	Mods? (flashlight, hidden, double time)
+	Moedas
+	Mods? (flashlight, hidden, double time, EZ)
 	
+Map generation:
+
+	gerar mapa(fase);
+		1. começo terra
+		8. 
+		1. final terra + (entre 1 e 10) trofeu
+	randomização de terras e lagos, mais fases mais lagos
+	gerar {fases} numeros aleatorios de 2 a 9, lago sera posto nesse numero
+	
+Bugs:
+	Nao perder vida quando a balsa anda e o sapinho continuar imovel
 
